@@ -24,11 +24,14 @@ class Patient
   end 
   
   def doctor 
+      self.appointments.collect { |appointment|
   end 
 
  
   
-
+def genres 
+  self.songs.collect {|song| song.genre}
+  end 
 
 
 
