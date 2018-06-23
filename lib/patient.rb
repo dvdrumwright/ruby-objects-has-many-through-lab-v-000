@@ -23,16 +23,8 @@ class Patient
       Appointment.all.select { |appointment| appointment.patient == self }
   end 
   
-  def doctor 
+  def doctors 
       self.appointments.collect { |appointment| appointment.doctor} 
   end 
-
- 
-  
-def genres 
-  self.songs.collect {|song| song.genre}
-  end 
-
-
 
 end 
